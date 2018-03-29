@@ -1,0 +1,47 @@
+﻿@model Gym.WebUI.Models.ExerciseViewModel
+
+<div class="create__form">
+    <h2>Create new exercise</h2>
+
+    @using (Html.BeginForm("Save", "Exercise"))
+    {
+        @Html.HiddenFor(m => m.ExerciseID)
+        @Html.HiddenFor(m => m.TrainingID)
+        <div class="form-group">
+            <label>Exercise name: </label>
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", rows = 5 })
+            @Html.ValidationMessageFor(m => m.Name)
+        </div>
+        <div class="form-group">
+            <label>Number of series: </label>
+            @Html.TextBoxFor(m => m.Series, new { @Value = "",  @min = "1", @type = "number", @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Series)
+        </div>
+        <div class="form-group">
+            <label>Number of repetitions: </label>
+            @Html.TextBoxFor(m => m.Repetitions, new { @Value = "", @min = "1", @type = "number", @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Repetitions)
+        </div>
+        <div class="form-group">
+            <label>Weight: </label>
+            @Html.TextBoxFor(m => m.Weight, new { @Value = "", @min = "1",  @type = "number", @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Weight)
+        </div>
+        <div class="form-group">
+            <label>Rest time: </label>
+            @Html.TextBoxFor(m => m.RestTime, new { @Value = "", @min = "0", @type = "number", @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.RestTime)
+        </div>
+        <div class="form-group">
+            <label>Add description (optional)</label>
+            @Html.TextAreaFor(m => m.Description, new { @class = "form-control" })
+        </div>
+
+        <div>
+            <input type="submit" value="Save" class="btn btn-primary" />
+            <a class="btn btn-default" href="javascript:void(0);" onclick="history.go(-1);">Cancel</a>
+        </div>
+    }
+</div>
+
+

@@ -1,0 +1,37 @@
+﻿.navbar {
+    background: #fffacc;
+    border: none;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    color: #705c25 !important;
+}
+
+.container {
+    margin: 0;
+    padding: 10px 30px 0 20px;
+    width: 100%;
+}
+
+.body-content {
+    margin: 0;
+    padding: 0;
+}
+
+#logoutForm a {
+    padding-right: 50px;
+    font-weight: bold;
+    color: #705c25 !important;
+}
+
+.alert {
+    padding: 10px !important;
+    margin: 10px !important;
+}
+
+.alert-success {
+    padding: 10px !important;
+    margin: 10px !important;
+}

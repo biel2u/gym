@@ -1,0 +1,97 @@
+﻿body {
+    background: #fffacc;
+    height: 100%;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    color: #705c25;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.button__delete {
+    border: none;
+    color: #705c25;
+    background: none;
+    outline: none;
+    float: right;
+}
+
+.button__edit {
+    float: right;
+    color: #705c25;
+    font-weight: bold;
+}
+
+.button__edit:hover {
+    color: #705c25 !important;
+    text-decoration: none !important;
+}
+
+h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+    color: #705c25 !important;
+}
+
+.login__header {
+    font-weight: bold;
+    margin-left: -20px;
+}
+
+.login__form {
+    padding: 100px 0 0 100px;
+}
+
+.checkbox {
+    padding-left: 20px;
+}
+
+#socialLoginList {
+    margin-left: -20px;
+}
+
+.register__link {
+    margin-left: -20px;
+}
+
+.headers {
+    font-weight: bold;
+    padding: 50px 0 30px 50px;
+}
+
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}

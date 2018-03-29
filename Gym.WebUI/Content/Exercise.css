@@ -1,0 +1,85 @@
+﻿.exercises__container {
+    display: flex;
+    flex-direction: column; 
+    padding: 100px 0 0 50px;
+}
+
+.exercise {
+    width: 50%;
+}
+
+.exercise__header {
+    font-weight: bolder;
+    padding: 50px 50px 30px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.exercise__title {
+    font-size: 26px;
+}
+
+.exercise__add {
+    color: #705c25;
+    float: right;
+    border: 2px solid #705c25;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.exercise__add:hover {
+    color: #fffacc !important;
+    background-color: #705c25;
+}
+
+.exercise__link {
+    font-weight: bold;
+    color: #5c7c3f !important;
+}
+
+.exercise__number {
+    font-weight: bolder;
+    font-size: 56px;
+    left: 80px;
+    padding-top: 50px;
+    color: #efe2b1;
+    width: 50%;
+    text-align: right;
+}
+
+.exercises {
+    display: flex;
+    flex-direction: row;
+    background: #ffefb2;
+    width: 280px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.exercise__parameters {
+    font-weight: bold;
+    padding-top: 10px;
+    border-top: 2px solid #705c25;
+}
+
+.red {
+    color: #8c282b;
+}
+
+.blue {
+    color: #28498c;
+}
+
+.green {
+    color: #288c5b;
+}
+
+.dark {
+    color: #313d51;
+}
+
+.exercise h3 {
+    padding-bottom: 5px;
+}

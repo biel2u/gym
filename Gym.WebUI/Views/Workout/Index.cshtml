@@ -1,0 +1,37 @@
+﻿@model Gym.WebUI.Models.WorkoutListViewModel
+
+<div>
+    <div class="workout__header">
+        <div class="workout__title">My Workouts</div>
+        <div>
+            @if (TempData["message"] != null)
+            {
+                <div class="alert alert-success">@TempData["message"]</div>
+            }
+        </div>
+        <div>@Html.ActionLink("Add Workout", "Create", "Workout", new { @class = "workout__add" })</div>
+    </div>
+    <div class="workouts__content">       
+        @foreach (var m in Model.Trainings)
+        {
+            <div class="workout">
+                @using (Html.BeginForm("Delete", "Workout"))
+                {
+                    @Html.Hidden("TrainingID", m.TrainingID)
+
+                    <button type="submit" class="button__delete">
+                        <i class="fa fa-times-circle-o fa-lg" aria-hidden="true"></i>
+                    </button>
+                }
+                <h3>@Html.ActionLink(m.Name, "Show", "Exercise", new { m.TrainingID }, new { @class = "workout__name" })</h3>
+                <div class="workout__info"><i class="fa fa-male" aria-hidden="true"></i> @m.Category</div>
+                <div class="workout__info"><i class="fa fa-calendar" aria-hidden="true"></i> @m.Day</div>
+                @Html.ActionLink("Edit...", "Edit", new { m.TrainingID }, new { @class = "button__edit" })
+           
+            </div>
+        }
+    </div>
+    <div class="pagging__buttons">
+        @Html.PageLinks(Model.PagingInfo, x => Url.Action("Index", new { page = x}))
+    </div>
+</div>

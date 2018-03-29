@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gym.Domain", "Gym.Domain\Gym.Domain.csproj", "{C6BA600C-B11E-4C65-A87B-310A54A2DA76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gym.WebUI", "Gym.WebUI\Gym.WebUI.csproj", "{A81CBB52-8A8F-4BB8-A11A-E63D508C05BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gym.UnitTests", "Gym.UnitTests\Gym.UnitTests.csproj", "{2183EC70-A8EA-415B-950A-EF87DE77A374}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6BA600C-B11E-4C65-A87B-310A54A2DA76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6BA600C-B11E-4C65-A87B-310A54A2DA76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6BA600C-B11E-4C65-A87B-310A54A2DA76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6BA600C-B11E-4C65-A87B-310A54A2DA76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A81CBB52-8A8F-4BB8-A11A-E63D508C05BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A81CBB52-8A8F-4BB8-A11A-E63D508C05BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A81CBB52-8A8F-4BB8-A11A-E63D508C05BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A81CBB52-8A8F-4BB8-A11A-E63D508C05BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2183EC70-A8EA-415B-950A-EF87DE77A374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2183EC70-A8EA-415B-950A-EF87DE77A374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2183EC70-A8EA-415B-950A-EF87DE77A374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2183EC70-A8EA-415B-950A-EF87DE77A374}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFD640CE-32C8-416B-A476-D9C801215E2C}
+	EndGlobalSection
+EndGlobal

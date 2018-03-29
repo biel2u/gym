@@ -1,0 +1,41 @@
+﻿@using Gym.Domain.Entities
+@model IEnumerable<Exercise>
+
+<div class="exercises__container">
+    <div class="exercise__header">
+        <div class="exercise__title">My exercises</div>
+        @if (TempData["message"] != null)
+            {
+            <div class="alert alert-success">@TempData["message"]</div>
+        }
+        <div>@Html.ActionLink("Add Exercise", "Create", "Exercise", new { @class = "exercise__add" })</div>
+    </div>
+    @{
+        int i = 1;
+        foreach (var m in Model)
+        {
+            <div class="exercises">
+                <div class="exercise">                 
+                    <h3>@Html.ActionLink(m.Name, "Edit", new { m.ExerciseID }, new { @class = "exercise__link" })</h3>
+                    <div class="exercise__parameters">
+                        <div><span class="red">Series:</span> @m.Series</div>
+                        <div><span class="blue">Repetitions:</span> @m.Repetitions</div>
+                        <div><span class="green">Weight:</span> @m.Weight kg.</div>
+                        <div><span class="dark">Rest time:</span> @m.RestTime s.</div>
+                    </div>                                     
+                </div>
+                <div class="exercise__number">
+                    <span>@(i++)</span>
+                </div>
+                @using (Html.BeginForm("Delete", "Exercise"))
+                {
+                    @Html.Hidden("ExerciseID", m.ExerciseID)
+
+                    <button type="submit" class="button__delete">
+                        <i class="fa fa-times-circle-o fa-lg" aria-hidden="true"></i>
+                    </button>
+                }                
+            </div>
+        }
+    }
+</div>
